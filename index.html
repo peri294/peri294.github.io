@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicolás Guzzo Punta — Full Stack Developer</title>
+  <meta name="description" content="Portfolio de Nicolás Guzzo Punta, desarrollador full stack trainee. Proyectos con React, Node.js y Next.js/TypeScript.">
+  <meta property="og:title" content="Nicolás Guzzo Punta — Full Stack Developer">
+  <meta property="og:description" content="Proyectos full stack con React, Node.js y Next.js/TypeScript.">
+  <meta property="og:type" content="website">
+  <script>
+    // Idioma: el guardado, o el del navegador. Se aplica antes de pintar para evitar parpadeo.
+    (function () {
+      var lang;
+      try { lang = localStorage.getItem("lang"); } catch (e) {}
+      if (lang !== "es" && lang !== "en") lang = /^es\b/i.test(navigator.language || "es") ? "es" : "en";
+      document.documentElement.lang = lang;
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="nav-logo" href="#inicio">NG<span>.</span></a>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre-mi"><span data-lang="es">Sobre mí</span><span data-lang="en">About</span></a></li>
+          <li><a href="#proyectos"><span data-lang="es">Proyectos</span><span data-lang="en">Projects</span></a></li>
+          <li><a href="#habilidades"><span data-lang="es">Habilidades</span><span data-lang="en">Skills</span></a></li>
+          <li><a href="#formacion"><span data-lang="es">Formación</span><span data-lang="en">Education</span></a></li>
+          <li><a href="#contacto"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></li>
+        </ul>
+        <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language">
+          <span class="lang-opt" data-opt="es">ES</span><span class="lang-sep">/</span><span class="lang-opt" data-opt="en">EN</span>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menú">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ INICIO ============ -->
+    <section class="hero container" id="inicio">
+      <p class="eyebrow">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-lang="es">Buscando puesto trainee / junior · Argentina, remoto</span>
+        <span data-lang="en">Open to trainee / junior roles · Argentina, remote</span>
+      </p>
+      <h1 class="hero-title">Nicolás Guzzo Punta</h1>
+      <p class="hero-role">Trainee Developer · Full Stack</p>
+      <p class="hero-lead" data-lang="es">
+        Estudiante de Informática en la UNLP. Desarrollo aplicaciones web full stack con
+        React, Node.js y Next.js/TypeScript, con foco en backend, tiempo real y tests.
+      </p>
+      <p class="hero-lead" data-lang="en">
+        Computer Science student at UNLP. I build full-stack web applications with
+        React, Node.js and Next.js/TypeScript, with a focus on backend, real-time features and testing.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#proyectos"><span data-lang="es">Ver proyectos</span><span data-lang="en">See projects</span></a>
+        <a class="btn btn-ghost" data-lang="es" href="assets/cv-es.pdf" download="CV Nicolás Guzzo Punta - ES.pdf">Descargar CV</a>
+        <a class="btn btn-ghost" data-lang="en" href="assets/cv-en.pdf" download="CV Nicolás Guzzo Punta - EN.pdf">Download CV</a>
+      </div>
+      <ul class="social">
+        <li><a href="https://github.com/peri294" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/nicolas-guzzo-punta-2aa996240" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:nicopuntaguzzo@gmail.com">Email</a></li>
+      </ul>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section container reveal" id="sobre-mi">
+      <h2 class="section-title"><span class="section-num">01</span> <span data-lang="es">Sobre mí</span><span data-lang="en">About me</span></h2>
+      <div class="about">
+        <div class="about-text">
+          <div data-lang="es">
+            <p>
+              Soy estudiante de la <strong>Licenciatura en Informática en la Universidad Nacional de La Plata</strong>
+              y desarrollo aplicaciones web de punta a punta: desde la interfaz hasta la base de datos.
+            </p>
+            <p>
+              Entregué dos proyectos completos: <strong>Comanda</strong>, un sistema de pedidos en tiempo real
+              con WebSockets, y <strong>Filo</strong>, un SaaS de turnos con control de concurrencia en las reservas.
+              Entre los dos suman <strong>más de 90 tests automatizados</strong>.
+            </p>
+            <p>
+              Me interesa especialmente el backend: modelar bien el dominio, cuidar la seguridad
+              y que el código se pueda probar. Busco mi primer puesto trainee o junior en desarrollo
+              backend o full stack.
+            </p>
+          </div>
+          <div data-lang="en">
+            <p>
+              I'm a <strong>Computer Science student at Universidad Nacional de La Plata</strong> (Argentina)
+              and I build web applications end to end, from the interface down to the database.
+            </p>
+            <p>
+              I've delivered two complete projects: <strong>Comanda</strong>, a real-time ordering system
+              built on WebSockets, and <strong>Filo</strong>, a booking SaaS with concurrency-safe reservations.
+              Together they have <strong>90+ automated tests</strong>.
+            </p>
+            <p>
+              I'm especially drawn to backend work: modeling the domain well, taking care of security
+              and keeping code testable. I'm looking for my first trainee or junior role in backend
+              or full-stack development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section container reveal" id="proyectos">
+      <h2 class="section-title"><span class="section-num">02</span> <span data-lang="es">Proyectos</span><span data-lang="en">Projects</span></h2>
+      <div class="projects">
+
+        <article class="project project-featured">
+          <figure class="project-shots">
+            <img src="assets/comanda-mostrador.jpg" width="1200" height="750" loading="lazy"
+                 alt="Comanda: panel del mostrador con el estado de cada mesa y la caja del día">
+            <img src="assets/comanda-cocina.jpg" width="1200" height="750" loading="lazy"
+                 alt="Comanda: monitor de cocina con las comandas por estado">
+          </figure>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Comanda</h3>
+              <div class="project-links">
+                <a href="https://github.com/peri294/PPR" target="_blank" rel="noopener"><span data-lang="es">Código</span><span data-lang="en">Code</span> ↗</a>
+              </div>
+            </div>
+            <p class="project-sub" data-lang="es">Pedidos en tiempo real por QR para cafeterías</p>
+            <p class="project-sub" data-lang="en">Real-time QR table ordering for cafés</p>
+            <ul class="project-points" data-lang="es">
+              <li>Tres vistas sincronizadas por WebSockets: cliente (QR de la mesa), cocina y mostrador.</li>
+              <li>Capa de dominio separada con tests unitarios y 22 tests end-to-end con Playwright.</li>
+              <li>Autenticación con sesiones revocables y freno de intentos de login; despliegue como servicio único.</li>
+            </ul>
+            <ul class="project-points" data-lang="en">
+              <li>Three views synchronized over WebSockets: customer (table QR code), kitchen and counter.</li>
+              <li>Separate domain layer covered by unit tests, plus 22 end-to-end tests with Playwright.</li>
+              <li>Authentication with revocable sessions and login throttling; single-service deployment.</li>
+            </ul>
+            <ul class="tags"><li>React 19</li><li>Node.js</li><li>Express</li><li>Socket.io</li><li>SQLite</li><li>Playwright</li></ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>Filo</h3>
+            <div class="project-links">
+              <a href="https://github.com/peri294/Filo" target="_blank" rel="noopener"><span data-lang="es">Código</span><span data-lang="en">Code</span> ↗</a>
+            </div>
+          </div>
+          <p class="project-sub" data-lang="es">SaaS multi-tenant de turnos online para barberías</p>
+          <p class="project-sub" data-lang="en">Multi-tenant SaaS for barbershop online booking</p>
+          <ul class="project-points" data-lang="es">
+            <li>Reservas con control de concurrencia en la base de datos para evitar turnos duplicados.</li>
+            <li>Autenticación con verificación por SMS (Twilio), roles y rate limiting.</li>
+            <li>68 tests de integración con Vitest.</li>
+          </ul>
+          <ul class="project-points" data-lang="en">
+            <li>Bookings with database-level concurrency control to prevent double-booking.</li>
+            <li>SMS-verified authentication (Twilio), role-based access and rate limiting.</li>
+            <li>68 integration tests with Vitest.</li>
+          </ul>
+          <ul class="tags"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Prisma</li><li>Tailwind CSS</li><li>Vitest</li></ul>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section container reveal" id="habilidades">
+      <h2 class="section-title"><span class="section-num">03</span> <span data-lang="es">Habilidades</span><span data-lang="en">Skills</span></h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3><span data-lang="es">Lenguajes</span><span data-lang="en">Languages</span></h3>
+          <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Java</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul><li>React 19</li><li>Next.js 16</li><li>Tailwind CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3><span data-lang="es">Backend y datos</span><span data-lang="en">Backend &amp; data</span></h3>
+          <ul><li>Node.js</li><li>Express</li><li>Socket.io (WebSockets)</li><li>Prisma</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Testing</h3>
+          <ul>
+            <li>Playwright (E2E)</li><li>Vitest</li>
+            <li><span data-lang="es">Tests unitarios y de integración</span><span data-lang="en">Unit &amp; integration testing</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3><span data-lang="es">Herramientas</span><span data-lang="en">Tools</span></h3>
+          <ul><li>Git</li><li>Linux</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3><span data-lang="es">Aprendiendo</span><span data-lang="en">Learning</span></h3>
+          <ul><li>Docker</li><li>PostgreSQL</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMACIÓN ============ -->
+    <section class="section container reveal" id="formacion">
+      <h2 class="section-title"><span class="section-num">04</span> <span data-lang="es">Formación</span><span data-lang="en">Education</span></h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date"><span data-lang="es">2023 — Actualidad</span><span data-lang="en">2023 — Present</span></div>
+          <div class="timeline-body">
+            <h3>
+              <span data-lang="es">Licenciatura en Informática</span><span data-lang="en">BSc in Computer Science</span>
+              · <span class="org">Universidad Nacional de La Plata (UNLP)</span>
+            </h3>
+            <p><span data-lang="es">En curso.</span><span data-lang="en">In progress.</span></p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date"><span data-lang="es">Mayo 2025</span><span data-lang="en">May 2025</span></div>
+          <div class="timeline-body">
+            <h3><span data-lang="es">Ciberseguridad</span><span data-lang="en">Cybersecurity</span> · <span class="org">Coderhouse</span></h3>
+            <p><span data-lang="es">Curso de 18 horas en 9 semanas.</span><span data-lang="en">18-hour course over 9 weeks.</span></p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date"><span data-lang="es">Idiomas</span><span data-lang="en">Languages</span></div>
+          <div class="timeline-body">
+            <p data-lang="es">Español: nativo · Inglés: intermedio (B1–B2)</p>
+            <p data-lang="en">Spanish: native · English: intermediate (B1–B2)</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section container reveal contact" id="contacto">
+      <h2 class="section-title"><span class="section-num">05</span> <span data-lang="es">Contacto</span><span data-lang="en">Contact</span></h2>
+      <p class="contact-lead" data-lang="es">
+        ¿Tenés una propuesta o querés charlar sobre algún proyecto? Escribime.
+      </p>
+      <p class="contact-lead" data-lang="en">
+        Have an opportunity or want to talk about a project? Drop me a line.
+      </p>
+      <a class="contact-email" href="mailto:nicopuntaguzzo@gmail.com">nicopuntaguzzo@gmail.com</a>
+      <button class="btn btn-ghost copy-btn" type="button" data-copy="nicopuntaguzzo@gmail.com"
+              data-es="Copiar email" data-en="Copy email"
+              data-es-done="¡Copiado!" data-en-done="Copied!"
+              data-es-fail="No se pudo copiar" data-en-fail="Couldn't copy">Copiar email</button>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Nicolás Guzzo Punta</p>
+    <a href="#inicio"><span data-lang="es">Volver arriba</span><span data-lang="en">Back to top</span> ↑</a>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
