@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#contenido"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
@@ -154,9 +154,13 @@
             </ul>
             <div class="project-foot">
               <ul class="tags"><li>React 19</li><li>Node.js</li><li>Express</li><li>Socket.io</li><li>SQLite</li><li>Playwright</li></ul>
-              <a class="btn btn-primary btn-demo" href="https://comanda-rm70.onrender.com/" target="_blank" rel="noopener">
-                <span data-lang="es">Probar demo</span><span data-lang="en">Live demo</span> ↗
-              </a>
+              <div class="demo">
+                <a class="btn btn-primary btn-demo" href="https://comanda-rm70.onrender.com/" target="_blank" rel="noopener">
+                  <span data-lang="es">Probar demo</span><span data-lang="en">Live demo</span> ↗
+                </a>
+                <p class="demo-note" data-lang="es">La primera carga puede tardar cerca de un minuto.</p>
+                <p class="demo-note" data-lang="en">First load may take about a minute.</p>
+              </div>
             </div>
           </div>
         </article>
@@ -275,6 +279,6 @@
     <a href="#inicio"><span data-lang="es">Volver arriba</span><span data-lang="en">Back to top</span> ↑</a>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=3" defer></script>
 </body>
 </html>
